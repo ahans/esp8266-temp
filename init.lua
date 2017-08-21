@@ -1,0 +1,7 @@
+print("*** Starting in 10 secs ***")
+tmr.alarm(0, 10000, 0, function()
+   print("Executing ...")
+   dofile("setup.lua")
+   print("Starting server ...")
+   dofile("ds18b20-web.lua")
+end)
