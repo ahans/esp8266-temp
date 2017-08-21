@@ -12,6 +12,7 @@ DS18B20 temperature sensor.
 `encoder` and `1-Wire` in addition to the already selected modules
 enabled.
 2. Flash your firmware:
+
 	esptool.py --port /dev/ttyUSB0 write_flash --flash_mode dio 0x00000 nodemcu-master-10-modules-2017-08-08-19-33-52-integer.bin
 
 
@@ -19,4 +20,5 @@ enabled.
 
 1. Copy `setup.lua.tpl` to `setup.lua` and set your wifi data.
 2. Run the following to upload the lua files:
+
 	nodemcu-uploader.py --port /dev/ttyUSB0 --baud 115200 upload *.lua
